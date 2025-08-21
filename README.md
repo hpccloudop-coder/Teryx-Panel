@@ -15,6 +15,8 @@ bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/re
 bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/refs/heads/main/Domin)
 ```
 
+3. Node installing
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/refs/heads/main/node)
 ```
