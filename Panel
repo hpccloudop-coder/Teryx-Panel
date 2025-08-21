@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Panel For The Script
+# Author: [iTzTasin69]
+# credit: HopingBoyz
+
+# Colors for output
+RED='\033[0;31m'      # Errors and warnings/disclaimers
+GREEN='\033[0;32m'    # Success messages and menu titles
+CYAN='\033[0;36m'     # Menu options and general messages
+YELLOW='\033[1;33m'   # Prompts and borders
+BOLD='\033[1m'        # Bold text for emphasis
+UNDERLINE='\033[4m'   # Underline for links
+NC='\033[0m'          # No Color
+
+# Function to display messages (now with color parameter)
+function echo_message {
+  local color="$1"
+  shift
+  echo -e "${color}$@${NC}"
+}
+
+# Check if the script is run as root
+if [ "$EUID" -ne 0 ]; then
+  echo_message "$RED" "Please run this script as root."
+  exit 1
+fi
+
+# Typing Animation for Credits (quick typing in 1s total)
+credit_text="${GREEN}${BOLD}Credit by ${YELLOW}${BOLD}HopingBoyz ${NC}${BOLD}and ${RED}${BOLD}iTzTasin69 :)${NC}"
+clear
+
+apt update
+
+git clone https://github.com/teryxlabs/v4panel
+
+curl -sL https://deb.nodesource.com/setup_23.x | sudo bash -
+
+apt-get install nodejs git
+
+cd v4panel
+
+apt install zip -y && unzip panel.zip
+
+npm install && npm run seed && npm run createUser
+
+npm install pm2@latest -g
+pm2 start index.js
+pm2 startup
+pm2 save
+
+echo Panel Succesfully Created now visit yourdomin or use parsonal domin code
