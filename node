@@ -3,10 +3,6 @@ echo installing Node CMD
 
 git clone https://github.com/dragonlabsdev/daemon
 
-cd daemon
-
-apt install zip -y && unzip daemon.zip && cd daemon
-
-npm install
+cd daemon && apt install zip -y && unzip daemon.zip && cd daemon && npm install
 
 echo node installing done now paste your node config and use start script
