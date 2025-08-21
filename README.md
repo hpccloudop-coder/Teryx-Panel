@@ -15,6 +15,10 @@ bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/re
 bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/refs/heads/main/Domin)
 ```
 
+```bash
+bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/refs/heads/main/node)
+```
+
 ## Contributing
 Contributions to enhance the functionality or performance of the DracoPanel are encouraged. Please submit pull requests for any enhancements.
 
