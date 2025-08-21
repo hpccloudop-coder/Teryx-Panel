@@ -6,12 +6,14 @@
 1. Panel Installing Command
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/refs/heads/main/Panel)```
+bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/refs/heads/main/Panel)
+```
 
 2. Parsonal Domin Command
 
 ```bash
-cmd```
+cmd
+```
 
 ## Contributing
 Contributions to enhance the functionality or performance of the DracoPanel are encouraged. Please submit pull requests for any enhancements.
