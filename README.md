@@ -12,7 +12,7 @@ bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/re
 2. Parsonal Domin Command
 
 ```bash
-cmd
+bash <(curl -s https://raw.githubusercontent.com/hpccloudop-coder/Teryx-Panel/refs/heads/main/Domin)
 ```
 
 ## Contributing
