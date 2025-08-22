@@ -1,0 +1,21 @@
+echo Chaking
+
+# step 1 install importens
+
+git clone https://github.com/dragonlabsdev/dash
+
+# step 2 go to folder
+
+cd dash
+
+# step 3 item config
+
+apt install zip -y && unzip dashboard.zip && cd dash && apt install nano -y && nano .env
+
+# step 4 running script
+
+npm install
+
+# last step start all
+
+echo sussfully setup done! Now type ( node . )
