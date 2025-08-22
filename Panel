@@ -29,6 +29,13 @@ fi
 # Typing Animation for Credits (quick typing in 1s total)
 credit_text="${GREEN}${BOLD}Credit by ${YELLOW}${BOLD}HopingBoyz ${NC}${BOLD}and ${RED}${BOLD}iTzTasin69 :)${NC}"
 clear
+echo -n ""  # Start on a new line
+displayed=""
+for (( i=0; i<${#credit_text}; i++ )); do
+  displayed="${displayed}${credit_text:$i:1}"
+  echo -ne "\r${displayed}"  # Overwrite the line with interpreted colors
+  sleep 0.025  # Adjusted delay for ~1 second total typing
+done
 
 apt update
 
