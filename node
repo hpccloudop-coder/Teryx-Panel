@@ -1,4 +1,4 @@
-echo installing Node CMD
+echo installing Node
 
 
 git clone https://github.com/dragonlabsdev/daemon
