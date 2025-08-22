@@ -1,9 +1,15 @@
 echo installing Node
 
-
+# step 1 clone repo
 git clone https://github.com/dragonlabsdev/daemon
 
-cd daemon && apt install zip -y && unzip daemon.zip && cd daemon && cd daemon && cd daemon
+step 2 install importens
+cd daemon && apt install zip -y && unzip daemon.zip && cd daemon
+
+step 3 cd
+cd daemon
+
+# step 4 npm
 cd daemon && npm install
 
 echo node installing done now paste your node config and use start script
